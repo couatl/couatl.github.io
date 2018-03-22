@@ -79,4 +79,10 @@
     .skills-list li {
         width: 90%;
     }
+    .skills__title {
+        font-size: 2.5em;
+    }
+    .skills-list__icon {
+        font-size: 3em;
+    }
 }
