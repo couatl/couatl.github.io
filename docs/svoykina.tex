@@ -1,0 +1,71 @@
+
+\documentclass[12pt,a4paper,russian]{moderncv} 
+
+\usepackage[T2A]{fontenc} 
+\usepackage[utf8]{inputenc} 
+\usepackage[english, russian]{babel}
+
+
+\moderncvstyle{classic}
+\moderncvcolor{green}
+
+\usepackage[scale=0.75]{geometry}
+
+\renewcommand{\rmdefault}{cmss}
+
+\name{Свойкина}{Надежда}
+\title{Frontend developer, Information Security specialist}
+\address{Moscow}
+\phone[mobile]{+7~(968)~914~1054}
+\social[github]{couatl}
+\email{nadya.svojkina@gmail.com}
+%\extrainfo{additional information}
+\photo[100pt][0.4pt]{img/svoykina}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{2015--2018}{Информационная безопасность}{}{}{\textit{МГТУ им. Н.Э.Баумана}}{Студент 3-го курса.}
+\cventry{2017--2018}{Системный архитектор}{}{}{\textit{Технопарк Mail.ru Group}}{Разработка высоконагруженных систем, Frontend development, Web. }
+
+\section{Professional skills}
+\cvitem{Languages: }{JavaScript, TypeScript, Go, Python, C/C++}
+\cvitem{Frontend: }{React, Redux, Node.js, Sass, Webpack, Babel, Jasmine}
+\cvitem{Databases: }{PostgreSQL, MongoDB}
+\cvitem{Software: }{Github, Docker, Travis CI}
+\cvitem{Additional: }{Knowledge of Algorithms and Data structures}
+
+\section{Projects}
+\cventry{***}{Apoj}{}{\textit{Browser game}}{}{\url{github.com/ToP-developers/Apoj-frontend} \newline
+{}%
+Браузерная многопользовательская SPA-игра.
+\begin{itemize}%
+\item работа с Web Audio Api;
+\item работа игры без интернета;
+\item деплой на vps (https, http2);
+\item мультиплеер на веб сокетах.
+\end{itemize}}
+
+\cventry{***}{Forum}{}{\textit{Backend to Forums}}{}{\url{github.com/couatl/forum-db-api} \newline
+{}%
+REST Api на Go по swagger-документации.
+\begin{itemize}%
+\item работа с PostgreSQL;
+\item сборка в docker-контейнере;
+\item нагрузочное тестирование дало 1269 rps.
+\end{itemize}}
+
+\section{Other skills}
+\cvlistitem{Участие в CTF}
+\cvlistitem{Upper Intermediate English}
+\cvlistitem{Basics of German language}
+\cvlistitem{Photoshop, Illustrator}
+
+
+\end{document}

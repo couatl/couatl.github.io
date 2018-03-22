@@ -1,0 +1,81 @@
+
+.navbar {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+
+    font-family: Moon, sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1em;
+
+    background-color: #50514F;
+    color: white;
+
+    margin-top: -2px;
+    padding: 1em;
+
+    box-shadow: 0px 5px 0px rgba(184, 100, 31, 0.63);
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0.5em;
+}
+
+.navbar ul li a {
+    color: #e3e3e3;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar ul li a,
+.navbar ul li a:after,
+.navbar ul li a:before {
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.navbar ul li a:hover {
+    -moz-transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    color: #f99f21;
+}
+
+.navbar__links {
+    float: right;
+}
+
+.mobile-nav {
+    display: none;
+    width: 100%;
+    padding: 1em;
+}
+
+.mobile-nav__slidebar {
+    display: none;
+}
+
+.mobile-nav__button {
+    float: right;
+    font-size: 2.5em;
+    z-index: 1;
+    transition: all 300ms ease-in-out;
+}
+
+@media (max-width: 640px) {
+    .mobile-nav {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+}
+

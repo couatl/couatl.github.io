@@ -1,0 +1,142 @@
+@import './_config.css';
+@import './navbar.css';
+@import './home.css';
+@import './profile.css';
+@import './resume.css';
+@import './skills.css';
+@import './projects.css';
+
+html {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    line-height: normal;
+    font-weight: 300;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #282828;
+    background-color: #fff;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+a {
+    color: white;
+}
+
+a,
+a > * {
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    background-color: #3d3e3c;
+    color: #e3e3e3;
+    font-size: 1em;
+    height: 2em;
+    padding: 1em;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.divider {
+    height: 2em;
+    background-color: #732a2f;
+    width: 100%;
+}
+
+.triangle-divider {
+    height: 3em;
+    background-color: #b8641f;
+    width: 100%;
+}
+
+.triangle {
+    margin: auto;
+    transform: translateX(20%) translateY(50%) rotate(-45deg);
+    background-color: #b8641f;
+    width: 3em;
+    height: 3em;
+    margin-top: -3em;
+}
+
+.parallax-me {
+    background-image: url('../img/present.jpg');
+    height: 30em;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.angled-divider {
+    background-color: #e6e6e6;
+    overflow: hidden;
+    height: 10em;
+    width: 110%;
+    margin-left: -2em;
+    transform: translateY(-65%) rotate(5deg);
+    position: absolute;
+    z-index: 1;
+}
+
+.triangles {
+    display: block;
+}
+
+.triangles__left {
+    margin-top: -5em;
+    width: 0px;
+    height: 0px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5em 0 0 5em;
+    border-left-color: #b56221;
+    border-top-color: rgba(128, 0, 128, 0);
+}
+
+.triangles__right {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    margin-top: -5em;
+    right: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 0 0 5em 5em;
+    border-bottom-color: #b56221;
+    border-left-color: rgba(75, 0, 130, 0);
+}
+
+@media (max-width: 640px) {
+    html {
+        font-size: 24px;
+    }
+
+    .parallax-me {
+        background-position: top right;
+    }
+}
+
