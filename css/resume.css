@@ -91,7 +91,11 @@
     width: 45%;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
+    .resume {
+        padding-bottom: 10em;
+    }
+
     .resume__timeline-left {
         width: fit-content;
         max-width: 100%;

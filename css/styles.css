@@ -1,4 +1,6 @@
-@import './_config.css';
+@import './roboto.css';
+@import './moon.css';
+
 @import './navbar.css';
 @import './home.css';
 @import './profile.css';
@@ -7,7 +9,7 @@
 @import './projects.css';
 
 html {
-    font-size: 16px;
+    font-size: 20px;
     font-family: Roboto, sans-serif;
     line-height: normal;
     font-weight: 300;
@@ -48,7 +50,6 @@ header {
 footer {
     background-color: #3d3e3c;
     color: #e3e3e3;
-    font-size: 1em;
     height: 2em;
     padding: 1em;
     text-align: center;
@@ -85,8 +86,6 @@ ul {
     width: 100%;
     background-attachment: fixed;
     background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -108,8 +107,8 @@ ul {
 
 .triangles__left {
     margin-top: -5em;
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     border-color: transparent;
     border-style: solid;
     border-width: 5em 0 0 5em;
@@ -118,8 +117,8 @@ ul {
 }
 
 .triangles__right {
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     position: absolute;
     margin-top: -5em;
     right: 0;
@@ -130,13 +129,13 @@ ul {
     border-left-color: rgba(75, 0, 130, 0);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
     html {
-        font-size: 20px;
+        font-size: 12px;
     }
 
     .parallax-me {
-        background-position: top right;
+        display: none;
     }
 }
 

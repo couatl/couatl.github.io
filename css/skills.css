@@ -13,7 +13,7 @@
     text-align: center;
     margin-bottom: 1em;
     line-height: 1em;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 400;
     color: #484848c2;
 }
@@ -29,23 +29,18 @@
 
 .skills-list li {
     margin: auto;
-    width: 40%;
-}
-
-.skills-list i {
-    font-size: 1.5em;
+    width: 20em;
 }
 
 .skills-list__icon {
     color: #b8641f;
-    font-size: 5em;
+    font-size: 3em;
     text-align: center;
 }
 
 .skills-list__head {
     margin-top: 0.5em;
     margin-bottom: 1em;
-    font-size: 1.5em;
     text-align: center;
     font-weight: 500;
     color: #4f504f;
@@ -53,12 +48,13 @@
 
 .skills-list__body {
     text-align: center;
-    font-size: 1.2em;
     color: #4f504f;
     background-color: #fdf9f9eb;
     border-radius: 40px;
     padding: 1em 1em 1em 2em;
+    margin: auto;
     margin-bottom: 1em;
+    width: 15em;
 }
 
 .skills-list__body_item {
@@ -72,16 +68,19 @@
     margin-right: 0.5em;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
+    .skills {
+        font-size: 1.3em;
+    }
+
     .skills-list {
         flex-direction: column;
     }
+
     .skills-list li {
         width: 90%;
     }
-    .skills__title {
-        font-size: 2.5em;
-    }
+
     .skills-list__icon {
         font-size: 3em;
     }

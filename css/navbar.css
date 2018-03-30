@@ -35,16 +35,10 @@
 .navbar ul li a,
 .navbar ul li a:after,
 .navbar ul li a:before {
-    -moz-transition: all .5s ease-in-out;
-    -webkit-transition: all .5s ease-in-out;
-    -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
 
 .navbar ul li a:hover {
-    -moz-transition: all .5s ease;
-    -webkit-transition: all .5s ease;
-    -o-transition: all .5s ease;
     transition: all .5s ease;
     color: #f99f21;
 }
@@ -70,7 +64,7 @@
     transition: all 300ms ease-in-out;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
     .mobile-nav {
         display: block;
     }

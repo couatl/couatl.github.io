@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="assets/devicon/devicon-colors.css">
     <link rel="stylesheet" href="assets/css/animate.css">
 
-    <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="css/styles.css">
     <!--TODO: Подключить иконку-->
 </head>
 <body>
@@ -96,18 +95,18 @@
             <!--Социальные сети!-->
             <div class="social-icons wow fadeInUp">
                 <div class="social-icons_item">
-                    <a href="https://www.facebook.com/nadia.svoykina"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/nadia.svoykina"><i class="devicon-facebook-plain colored"></i></a>
                 </div>
                 <div class="social-icons_item">
                     <a href="https://vk.com/po_dushka"><i class="fa fa-vk"></i></a>
                 </div>
                 <div class="social-icons_item">
-                    <a href="https://github.com/couatl"><i class="fa fa-github"></i></a>
+                    <a href="https://github.com/couatl"><i class="devicon-github-plain colored"></i></a>
                 </div>
             </div>
 
             <div class="download-button">
-                <a href="#"><i class="fa fa-download"></i>download cv</a>
+                <a href="docs/svoykina.pdf"><i class="fa fa-download"></i>download cv</a>
             </div>
         </div>
     </div>
@@ -282,33 +281,78 @@
                 <div class="projects__overlay_window_content">
                     <div class="projects__overlay_window_header">Apoj</div>
                     <div class="projects__buttons">
-                        <a href="https://github.com/ToP-developers/Apoj-frontend" class="projects__button" target="_blank">Github Repo</a>
+                        <a href="https://github.com/ToP-developers/Apoj-frontend" class="projects__button"
+                           target="_blank">Github Repo</a>
                         <a href="https://www.apoj.me/" class="projects__button" target="_blank">Game website</a>
                     </div>
+                    <div class="projects__overlay_window_labels">
+                        <div class="projects__overlay_window_labels-item">
+                            Javascript
+                        </div>
+                        <div class="projects__overlay_window_labels-item">
+                            Typescript
+                        </div>
+                        <div class="projects__overlay_window_labels-item">
+                            ES6
+                        </div>
+                        <div class="projects__overlay_window_labels-item">
+                            Webpack
+                        </div>
+                        <div class="projects__overlay_window_labels-item">
+                            SASS
+                        </div>
+                        <div class="projects__overlay_window_labels-item">
+                            BEM
+                        </div>
+                        <div class="projects__overlay_window_labels-item">
+                            Web Audio Api
+                        </div>
+                        <div class="projects__overlay_window_labels-item">
+                            Websockets
+                        </div>
+                        <div class="projects__overlay_window_labels-item">
+                            Routing
+                        </div>
+                        <div class="projects__overlay_window_labels-item">
+                            Service worker
+                        </div>
+                        <div class="projects__overlay_window_labels-item">
+                            nginx
+                        </div>
+                        <div class="projects__overlay_window_labels-item">
+                            HTTP/2
+                        </div>
+                        <div class="projects__overlay_window_labels-item">
+                            HTTPS
+                        </div>
+                    </div>
                     <div class="projects__overlay_window_title">Description</div>
-                    <div class="projects__description">Browser multiplayer SPA-game based on singing.</div>
-                    <div class="projects__overlay_window_title">Features</div>
+                    <div class="projects__description">Browser game based on the broken phone game. Supporting
+                        multiplayer mode and offline singleplayer. You sing - we reverse your song - your friend guess
+                        what it was.
+                    </div>
+                    <div class="projects__overlay_window_title">technical features</div>
                     <div class="projects__features">
                         <div class="projects__features_item">
                             Working offline (thx Service Worker)
                         </div>
                         <div class="projects__features_item">
-                            Services for Web Audio Api
+                            Services for working with Web Audio Api
                         </div>
                         <div class="projects__features_item">
-                            VPS deploy supporting https, http2
+                            VPS deploy supporting HTTPS, HTTP/2
                         </div>
                         <div class="projects__features_item">
                             Web Sockets
                         </div>
                         <div class="projects__features_item">
-                            CI with autodeploy on vps
+                            CI with autodeploy on VPS
                         </div>
                         <div class="projects__features_item">
                             Custom framework for SPA
                         </div>
                         <div class="projects__features_item">
-                            Also: Webpack, Babel, Sass
+                            <i>Also: Webpack, Babel, Sass</i>
                         </div>
                     </div>
                 </div>
@@ -325,11 +369,25 @@
                 <div class="projects__overlay_window_content">
                     <div class="projects__overlay_window_header">Forum Api</div>
                     <div class="projects__buttons">
-                        <a href="https://github.com/couatl/forum-db-api" class="projects__button" target="_blank">Github Repo</a>
+                        <a href="https://github.com/couatl/forum-db-api" class="projects__button" target="_blank">Github
+                            Repo</a>
+                    </div>
+                    <div class="projects__overlay_window_labels">
+                        <div class="projects__overlay_window_labels-item">
+                            Go
+                        </div>
+                        <div class="projects__overlay_window_labels-item">
+                            PostgreSQL
+                        </div>
+                        <div class="projects__overlay_window_labels-item">
+                            Docker
+                        </div>
                     </div>
                     <div class="projects__overlay_window_title">Description</div>
-                    <div class="projects__description">REST Api on Go using swagger documentation.</div>
-                    <div class="projects__overlay_window_title">Features</div>
+                    <div class="projects__description">REST Api implementation of Forums service according to provided
+                        swagger documentation.
+                    </div>
+                    <div class="projects__overlay_window_title">technical features</div>
                     <div class="projects__features">
                         <div class="projects__features_item">
                             Used PostgreSQL, Golang pq driver
@@ -338,7 +396,7 @@
                             Docker container
                         </div>
                         <div class="projects__features_item">
-                            Performance test with 1269 rps
+                            Performance test ended with 1269 RPS
                         </div>
                     </div>
                 </div>
@@ -348,6 +406,11 @@
     <div class="projects__title wow fadeInUp">Projects</div>
     <div class="projects-grid">
         <div id="apoj-button" class="projects-grid__item">
+            <div class="projects-grid__item_info-mobile">
+                <div class="projects-grid__item_info-mobile_title">Apoj</div>
+                <div class="info_label frontend">Frontend</div>
+                <div class="projects-grid__item_info-mobile_description">SPA Browser Game</div>
+            </div>
             <img class="projects-grid__item_image" src="img/apoj.png" alt>
             <div class="projects-grid__item_info">
                 <div class="info__text fadeInUp">
@@ -358,6 +421,11 @@
         </div>
 
         <div id="forum-button" class="projects-grid__item">
+            <div class="projects-grid__item_info-mobile">
+                <div class="projects-grid__item_info-mobile_title">Forum</div>
+                <div class="info_label backend">Backend</div>
+                <div class="projects-grid__item_info-mobile_description">REST Api to Forums</div>
+            </div>
             <img class="projects-grid__item_image" src="img/forum.png" alt>
             <div class="projects-grid__item_info">
                 <div class="info__text">
@@ -384,9 +452,8 @@
 <script src="assets/js/wow.min.js"></script>
 <script src="assets/js/jquery.js"></script>
 
-<script src="js/setup.js"></script>
+<script src="index.js"></script>
 <script src="js/scroll.js"></script>
-
 
 </body>
 </html>

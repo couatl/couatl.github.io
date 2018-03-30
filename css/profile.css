@@ -11,7 +11,7 @@
     margin-bottom: 1em;
     margin-top: 1em;
     line-height: 1em;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 400;
     color: #4848488a;
 }
@@ -42,7 +42,6 @@
 }
 
 .text-item_title {
-    font-size: 1.1em;
     margin-right: 1em;
     margin-bottom: 1em;
     color: #b8641f;
@@ -53,7 +52,7 @@
 }
 
 .text-item_content {
-    font-size: 1.2em;
+    display: inline-block;
 }
 
 .social-icons {
@@ -63,16 +62,13 @@
 
 .social-icons_item {
     margin: 1em;
-    width: 3em;
     text-align: center;
-    background-color: #e09c5a;
-    border-radius: 10px;
 }
 
 .social-icons_item a {
     font-size: 2em;
     line-height: normal;
-    color: white;
+    color: #3e5a98;
 }
 
 .download-button {
@@ -84,9 +80,8 @@
 .download-button a {
     cursor: pointer;
     padding: 0.5em;
-    font-size: 1.3em;
     letter-spacing: 3px;
-    background-color: #e09c5a;
+    background-color: #b86323;
     border-radius: 10px;
 }
 
@@ -94,14 +89,21 @@
     margin-right: 0.4em;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
+    .profile {
+        flex-direction: column;
+    }
+
     .profile__photo {
+        display: block;
+        width: 25em;
+        min-height: 25em;
+        margin: auto;
+        margin-top: 0.5em;
+    }
+
+    .profile__title {
         display: none;
     }
 }
-
-
-
-
-/*Курсор поинтер глючит!*/
 

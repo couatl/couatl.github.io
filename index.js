@@ -1,11 +1,10 @@
-
 /*
-* TODO: 1. Navbar появляется после скролла первой страницы + анимация к его появлению
-*       3. Кнопка scroll-up
-*       4. Кнопка scroll-down с первой страницы (необязательно)
-*       9. Noscroll класс при нажатии на more в projects
-*       11. Загрузка pdf
-* */
+ * TODO: 1. Navbar появляется после скролла первой страницы + анимация к его появлению
+ *       3. Кнопка scroll-up
+ *       4. Кнопка scroll-down с первой страницы (необязательно)
+ *       9. Noscroll класс при нажатии на more в projects
+ *       11. Загрузка pdf
+ * */
 
 new WOW().init();
 
@@ -43,13 +42,13 @@ const animationElement = $('#profile');
 const elementTopPosition = animationElement.offset().top;
 
 const checkView = () => {
-  const windowBottomPosition = $(window).scrollTop() + $(window).height();
+    const windowBottomPosition = $(window).scrollTop() + $(window).height();
 
-  if (elementTopPosition <= windowBottomPosition) {
-    $('.navbar').addClass('show');
-  } else {
-    $('.navbar').removeClass('show');
-  }
+    if (elementTopPosition <= windowBottomPosition) {
+        $('.navbar').addClass('show');
+    } else {
+        $('.navbar').removeClass('show');
+    }
 };
 
 $(window).on('scroll resize', checkView);
