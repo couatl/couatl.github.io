@@ -106,6 +106,9 @@
     color: #484848c2;
     font-size: 3em;
     margin-right: 0.3em;
+    position: fixed;
+    right: 0;
+    margin-left: auto;
 }
 
 .projects__overlay_nav:hover {
@@ -253,11 +256,15 @@
         width: 100%;
         height: fit-content;
         padding-bottom: 2em;
+        max-height: 70%;
+        overflow: scroll;
+    }
     }
 
     .projects__overlay_window {
         padding: 2em 1em 1em 1em;
         overflow: initial;
+        font-size: 0.8em;
     }
 
     .projects__buttons {

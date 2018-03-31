@@ -55,6 +55,7 @@
     margin: auto;
     margin-bottom: 1em;
     width: 15em;
+    max-width: 80%;
 }
 
 .skills-list__body_item {
