@@ -1,6 +1,8 @@
-# couatl-vue-cv
+#  Svoykina Nadya Portfolio Page
 
-> Nuxt.js project
+https://couatl.github.io
+
+Made with <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="15" src="https://vuejs.org/images/logo.png" alt="Vue logo"> Vue.js</a> and <a href="https://nuxtjs.org" target="_blank" rel="noopener noreferrer"><img align="center" width="25" src="http://imgur.com/V4LtoII.png"/> Nuxt.js</a> 
 
 ## Build Setup
 
@@ -18,6 +20,3 @@ $ npm start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-
