@@ -1,5 +1,5 @@
 <template>
-  <a href="https://github.com/marlenesco/material-cards" class="github-corner" aria-label="View source on Github"
+  <a href="https://github.com/couatl/couatl.github.io" class="github-corner" aria-label="View source on Github"
      target="_blank">
     <svg width="80" height="80" viewBox="0 0 250 250"
          style="fill:#732a2f; color: #ffffff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
