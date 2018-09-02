@@ -21,6 +21,20 @@ html {
   margin: 0;
 }
 
+.button-orange {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #b86323;
+  color: #b86323;
+  text-decoration: none;
+  padding: 10px 30px;
+}
+
+.button-orange:hover {
+  color: #fff;
+  background-color: #b86323;
+}
+
 .button--green {
   display: inline-block;
   border-radius: 4px;
@@ -51,16 +65,8 @@ html {
 }
 
 @font-face {
-  font-family: "Myra 4F Caps";
-  src: url('../assets/fonts/Myra-4F-Caps-Regular.otf');
-  /*src: url('../assets/fonts/Myra 4F Caps Regular.ttf') format("truetype");*/
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Moon';
-  src: url('../assets/fonts/Moon2.0-Regular.otf');
+  font-family: 'Nickainley';
+  src: url('../assets/fonts/Nickainley-Normal.otf');
   font-weight: 400;
   font-style: normal;
 }
