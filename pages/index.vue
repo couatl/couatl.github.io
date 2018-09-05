@@ -1,14 +1,10 @@
 <template>
-  <div class="main">
+  <div class="root">
+    <app-header/>
     <section class="logo">
-      <app-header/>
       <div>
         <github/>
         <app-title/>
-        <img src="landing.png" class="photo"/>
-        <div style="position: relative">
-          <div class="yellow-circle"/>
-        </div>
         <div class="landing__down">
           <div class="landing__down-text">
             About
@@ -17,23 +13,29 @@
         </div>
       </div>
     </section>
+    <profile-section/>
   </div>
 </template>
 
 <script>
 
   // TODO: При ховере на руку + about -> баунсинг руки
-  // TODO: багфикс ховера руки
+  // TODO: русская версия
+  // TODO: появление меню при скролле вниз
+  // TODO: появление меню при скролле вниз
+  // Поблагодарить шрифты в футере
 
   import Github from '~/components/Github.vue'
   import AppHeader from '~/components/AppHeader.vue'
   import AppTitle from '~/components/AppTitle.vue'
+  import ProfileSection from '~/components/ProfileSection.vue'
 
   export default {
     components: {
       Github,
       AppHeader,
-      AppTitle
+      AppTitle,
+      ProfileSection
     }
   }
 </script>
@@ -44,34 +46,18 @@
     font-size: 2em;
     display: flex;
     padding: 1em;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    box-shadow: inset 0 -1em #732a2f;
-  }
-
-  .photo {
-    display: block;
-    max-width: 100%;
-    width: 1200px;
-    margin-left: -2em;
-  }
-
-  .yellow-circle {
-    width: 700px;
-    height: 700px;
-    border: solid 350px #ffa522;
-    border-radius: 100%;
-    z-index: -1;
-    opacity: 0.2;
-    position: absolute;
-    bottom: 15em;
-    filter: blur(5px);
+    /*box-shadow: inset 0 -1em #732a2f;*/
+    /*background: #333532 url("../static/2.png") no-repeat right;*/
+    background-size: contain;
+    box-shadow: inset 0 0 0 0.3em #732a2f;
   }
 
   .landing__down {
     display: flex;
     position: absolute;
-    right: 1em;
+    left: 1em;
     bottom: 1.5em;
     flex-direction: column;
     cursor: pointer;
@@ -90,7 +76,7 @@
   }
 
   .landing__down-icon:hover {
-    transform:  rotate(180deg) translateY(-10px);
+    transform: rotate(180deg) translateY(-10px);
   }
 
   .landing__down-text {
