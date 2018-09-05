@@ -21,6 +21,17 @@ html {
   margin: 0;
 }
 
+a {
+  color: black;
+}
+
+a,
+a > * {
+  outline: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .button-orange {
   display: inline-block;
   border-radius: 4px;
@@ -71,5 +82,10 @@ html {
   font-style: normal;
 }
 
+@media (max-width: 680px) {
+  html {
+    font-size: 12px;
+  }
+}
 </style>
 
