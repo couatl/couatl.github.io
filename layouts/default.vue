@@ -25,6 +25,10 @@ a {
   color: black;
 }
 
+li {
+  list-style: none;
+}
+
 a,
 a > * {
   outline: none;
