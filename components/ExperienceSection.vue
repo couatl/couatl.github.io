@@ -87,7 +87,7 @@
     background-color: rgba(102, 15, 27, 0.9);
     padding: 2em;
     color: white;
-    margin-bottom: 3em;
+    margin-bottom: -2px;
   }
 
   .resume__title {

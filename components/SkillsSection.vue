@@ -6,81 +6,79 @@
     <ul class="skills-list">
       <li>
         <div class="skills-list__icon wow zoomIn"><i class="fa fa-globe"></i></div>
-        <div class="skills-list__head">Frontend / Advanced</div>
+        <div class="skills-list__head">Frontend</div>
         <div class="skills-list__body">
           <div class="skills-list__body_item">
-            <i class="devicon-nodejs-plain colored"></i>
+            <font-awesome-icon style="color: #f0db4f" :icon="['fab', 'js-square']"/>
             ES6, Typescript
           </div>
 
           <div class="skills-list__body_item">
-            <i class="devicon-react-original colored"></i>
+            <font-awesome-icon style="color: #61dafb" :icon="['fab', 'react']"/>
             React, Redux
           </div>
 
           <div class="skills-list__body_item">
-            <i class="devicon-react-original colored"></i>
+            <font-awesome-icon style="color: #54b882" :icon="['fab', 'vuejs']"/>
             Vue.js
           </div>
 
           <div class="skills-list__body_item">
-            <i class="devicon-sass-original colored"></i>
+            <font-awesome-icon style="color: #1f71b6" :icon="['fab', 'css3']"/>
             CSS3.0, Sass
           </div>
 
           <div class="skills-list__body_item">
-            <i class="devicon-webpack-plain colored"></i>
-            <i class="devicon-babel-plain colored"></i>
+            <font-awesome-icon style="color: #2178c0" icon="boxes"/>
             Webpack, Babel
           </div>
 
           <div class="skills-list__body_item">
-            <i class="devicon-webpack-plain colored"></i>
-            <i class="devicon-babel-plain colored"></i>
+            <font-awesome-icon icon="desktop"/>
             Photoshop, Illustrator
           </div>
         </div>
       </li>
       <li>
         <div class="skills-list__icon wow zoomIn"><i class="fa fa-code"></i></div>
-        <div class="skills-list__head">Backend / Very good</div>
+        <div class="skills-list__head">Backend</div>
         <div class="skills-list__body">
           <div class="skills-list__body_item">
-            <i class="devicon-javascript-plain colored"></i>
+            <font-awesome-icon style="color: #ffd845" icon="code"/>
             Python, Golang
           </div>
           <div class="skills-list__body_item">
-            <i class="devicon-typescript-plain colored"></i>
+            <font-awesome-icon style="color: #83CD29" :icon="['fab', 'node-js']"/>
             Node.js
           </div>
           <div class="skills-list__body_item">
-            <i class="devicon-go-line colored"></i>
+            <font-awesome-icon style="color: #336691" icon="file-code"/>
             PostgreSQL
           </div>
           <div class="skills-list__body_item">
-            <i class="devicon-python-plain colored"></i>
+            <font-awesome-icon style="color: #50aa41" icon="file-code"/>
             MongoDB
           </div>
           <div class="skills-list__body_item">
-            <i class="devicon-cplusplus-plain colored"></i>
+            <font-awesome-icon style="color: #51bcb3" icon="file-code"/>
             Elasticsearch
           </div>
         </div>
       </li>
       <li>
         <div class="skills-list__icon wow zoomIn"><i class="fa fa-desktop"></i></div>
-        <div class="skills-list__head">DevOPS / Good</div>
+        <div class="skills-list__head">DevOPS</div>
         <div class="skills-list__body">
           <div class="skills-list__body_item">
-            <i class="devicon-github-plain colored"></i>
+            <font-awesome-icon style="color: #ee4e30" :icon="['fab', 'git']"/>
             Github, Bitbucket
           </div>
           <div class="skills-list__body_item">
-            <i class="devicon-docker-plain colored"></i>
+            <font-awesome-icon style="color: #019bc6" :icon="['fab', 'docker']"/>
             Docker
           </div>
           <div class="skills-list__body_item">
-            <i class="devicon-travis-plain colored"></i>
+            <font-awesome-icon icon="file-code"/>
             Travis CI
           </div>
         </div>
@@ -107,6 +105,7 @@
 
   .skills-list {
     display: flex;
+    font-size: 1.1em;
     z-index: 3;
     position: relative;
     flex-wrap: wrap;
@@ -119,6 +118,10 @@
     width: 20em;
   }
 
+  .skills-list__body svg {
+    margin-right: 0.3em;
+  }
+
   .skills-list__icon {
     color: #b8641f;
     font-size: 3em;
@@ -129,19 +132,18 @@
     margin-top: 0.5em;
     margin-bottom: 1em;
     text-align: center;
-    font-weight: 500;
-    color: #4f504f;
+    font-weight: 600;
+    font-size: 1.2em;
   }
 
   .skills-list__body {
     text-align: center;
-    color: #4f504f;
-    background-color: #fdf9f9eb;
-    border-radius: 40px;
+    background-color: rgba(253, 249, 249, 0.92157);
+    border-radius: 0.5em;
     padding: 1em 1em 1em 2em;
     margin: auto;
     margin-bottom: 1em;
-    width: 15em;
+    width: 25em;
     max-width: 80%;
   }
 
