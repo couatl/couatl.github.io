@@ -21,7 +21,9 @@
         <span class="line-3"></span>
     </div>
     <div class="mobile-navbar" v-bind:class="{ mobileNavbar__triggered: showMobileMenu }">
-      <div class="mobile-navbar__header"><font-awesome-icon icon="map-signs"/> Quick Navigation</div>
+      <div class="mobile-navbar__header">
+        <!--<font-awesome-icon icon="map-signs"/> -->
+        Quick Navigation</div>
       <div class="mobile-navbar__link">
         <a href="#about"><font-awesome-icon icon="address-card"/>About</a>
         <a href="#projects"><font-awesome-icon icon="briefcase"/>Projects</a>
@@ -123,8 +125,8 @@
   .mobile-navbar__overlay {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.1);
-    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
     z-index: 100;
     display: none;
   }
@@ -209,6 +211,7 @@
     text-align: center;
     border-bottom: 2px rgba(128, 128, 128, 0.2) solid;
     color: darkred;
+    margin-left: 2em;
   }
 
   .mobile-navbar-lang {
