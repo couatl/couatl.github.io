@@ -17,7 +17,8 @@
     <div class="triangle-divider"></div>
     <div class="triangle"></div>
     <experience-section/>
-    <div class="angled-divider"></div>
+    <wave-divider/>
+    <!--<div class="angled-divider"></div>-->
     <skills-section/>
     <div class="divider"></div>
     <div class="triangles">
@@ -39,6 +40,8 @@
   import Github from '~/components/Github.vue'
   import AppHeader from '~/components/AppHeader.vue'
   import AppTitle from '~/components/AppTitle.vue'
+  import WaveDivider from '~/components/WaveDivider.vue'
+
   import ProfileSection from '~/components/ProfileSection.vue'
   import ExperienceSection from '~/components/ExperienceSection.vue'
   import SkillsSection from '~/components/SkillsSection.vue'
@@ -52,7 +55,8 @@
       ProfileSection,
       ExperienceSection,
       SkillsSection,
-      ProjectsSection
+      ProjectsSection,
+      WaveDivider
     }
   }
 </script>
