@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="navbar">
+    <div class="navbar" v-bind:class="{navbar__show: scrollPosition > 0}">
       <div>
         <div class="navbar__link"><a href="#about">About</a></div>
         <span>/</span>
@@ -43,13 +43,23 @@
   export default {
     data: function() {
       return {
-        showMobileMenu: false
+        showMobileMenu: false,
+        scrollPosition: null
       };
     },
     methods: {
       toggle: function () {
         this.showMobileMenu = !this.showMobileMenu;
+      },
+      updateScroll() {
+        this.scrollPosition = window.scrollY;
       }
+    },
+    mounted() {
+      window.addEventListener('scroll', this.updateScroll);
+    },
+    destroy() {
+      window.removeEventListener('scroll', this.updateScroll)
     }
   }
 </script>
@@ -64,6 +74,8 @@
     justify-content: space-between;
     text-transform: uppercase;
     letter-spacing: 3px;
+    z-index: 999;
+    transition: all ease 250ms;
   }
 
   .navbar div {
@@ -82,6 +94,29 @@
   .navbar a:hover {
     color: darkred;
     box-shadow: 0 2px darkred;
+  }
+
+  .navbar__show {
+    background-color: #722a30;
+    color: white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1em 5em 1em 2em;
+    border-bottom: 1px solid #4c1a1e;
+  }
+
+  .navbar__show a {
+    color: white;
+  }
+  .navbar__show a:hover {
+    color: white;
+    box-shadow: 0 2px white;
+  }
+
+  .navbar__show .lang div:hover {
+    color: white;
+    box-shadow: 0 2px white;
   }
 
   .lang {
