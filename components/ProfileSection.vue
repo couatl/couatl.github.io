@@ -11,18 +11,21 @@
     padding-left: 2px;
     padding-top: 0.5em;
     padding-bottom: 0.5em;">
-          I am Web Developer with knowledge of Cybersecurity. Currently living in <font-awesome-icon icon="map-marker-alt"/> Moscow.
-        </div>
-        <div style="display: flex; flex-direction: row; justify-content: space-between">
-          <div style="font-weight: normal; margin-right: 15px">
-            I started studying Web development during course on highload systems by Mail.ru a year ago and found myself
-            really passionate about it.
-            Especially I loved frontend development. I always prefer using modern frameworks in my projects.
-          </div>
-          <cathedral-icon/>
+          I am Web Developer with knowledge of Cybersecurity. <br/> Currently living in
+          <font-awesome-icon icon="map-marker-alt"/>
+          Moscow.
         </div>
         <div style="font-weight: normal">
-          Also I am currently an Information Security student.
+          <cathedral-icon class="profile__cathedral-icon"/>
+
+          I started studying Web development during course on highload systems by Mail.ru a year ago and found myself
+          really passionate about it.
+          Especially I loved frontend development.
+          <br/> Later I continued learning modern frameworks on my own which I liked. So I always prefer using them in
+          my projects.
+          <br/>
+          <br/>
+          Also I am now an Information Security student.
         </div>
       </div>
 
@@ -44,7 +47,7 @@
         </div>
 
         <div class="download-button">
-          <a href="svoykina_ru.pdf">Download CV</a>
+          <a href="svoykina_ru.pdf"><font-awesome-icon style="margin-right: 0.5em" icon="file-pdf"/>Download Resume</a>
         </div>
       </div>
     </div>
@@ -53,6 +56,8 @@
 <!--<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
 
 <script>
+  // TODO: click download in new tab!
+  // TODO: MOBILE
   import CathedralIcon from '~/components/CathedralIcon.vue'
 
   export default {
@@ -61,6 +66,7 @@
     }
   }
 </script>
+
 
 <style>
   .profile {
@@ -79,7 +85,7 @@
 
   .profile__photo {
     width: 50%;
-    min-height: 35em;
+    min-height: 40em;
     background: url('../static/profile-photo.png') no-repeat top center;
     background-size: cover;
   }
@@ -100,6 +106,12 @@
     margin-bottom: 0.5em;
   }
 
+  .profile__cathedral-icon {
+    height: 10em;
+    float: right;
+    margin: 10px;
+  }
+
   .social-icons {
     display: flex;
     justify-content: center;
@@ -114,7 +126,7 @@
   .download-button {
     margin: 1em;
     text-align: center;
-    text-transform: uppercase;
+    font-weight: bold;
   }
 
   .download-button a:hover {
@@ -142,14 +154,13 @@
 
     .profile__photo {
       display: block;
-      width: 20em;
+      width: 100%;
       min-height: 25em;
-      margin: auto;
       margin-top: 0.5em;
     }
 
-    .profile__title {
-      display: none;
+    .profile__info {
+      width: 100%;
     }
   }
 </style>
