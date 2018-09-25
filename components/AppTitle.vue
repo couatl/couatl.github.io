@@ -11,6 +11,10 @@
 </template>
 
 <style>
+  .app-title {
+    text-align: center;
+  }
+
   .app-title__name {
     display: inline-block;
     font-family: Nickainley, sans-serif;
@@ -19,7 +23,6 @@
   }
 
   .app-title__sub {
-    width: fit-content;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: 300;

@@ -1,42 +1,60 @@
-
 <template>
   <section id="projects" class="projects">
     <div class="projects__title">Projects</div>
     <div class="projects-grid">
-      <div id="apoj-button" class="projects-grid__item">
-        <div class="projects-grid__item_info-mobile">
-          <div class="projects-grid__item_info-mobile_title">Apoj</div>
-          <div class="info_label frontend">Frontend</div>
-          <div class="projects-grid__item_info-mobile_description">SPA Browser Game</div>
-        </div>
-        <img class="projects-grid__item_image" src="img/apoj.png" alt>
-        <div class="projects-grid__item_info">
-          <div class="info__text fadeInUp">
-            <div class="info__text_title">Apoj</div>
-            <div class="info__text_description">SPA Browser Game</div>
-          </div>
-        </div>
-      </div>
-
-      <div id="forum-button" class="projects-grid__item">
-        <div class="projects-grid__item_info-mobile">
-          <div class="projects-grid__item_info-mobile_title">Forum</div>
-          <div class="info_label backend">Backend</div>
-          <div class="projects-grid__item_info-mobile_description">REST Api to Forums</div>
-        </div>
-        <img class="projects-grid__item_image" src="img/forum.png" alt>
-        <div class="projects-grid__item_info">
-          <div class="info__text">
-            <div class="info__text_title">Forum</div>
-            <div class="info__text_description">REST Api to Forums</div>
-          </div>
-        </div>
-      </div>
-
+      <project-item
+        v-for="item in projectsList"
+        v-bind:project="item"
+        v-bind:key="item.id"/>
     </div>
-
   </section>
 </template>
+
+<script>
+  import ProjectItem from '~/components/ProjectItem.vue'
+
+  export default {
+    data: function () {
+      return {
+        projectsList: [
+          {id: 0, title: 'Apoj', tags: 'Frontend', description: 'SPA Browser Game', img: 'apoj.png', tagColor: '#b8641f'},
+          {id: 1, title: 'Forum', tags: 'Backend', description: 'REST Api to Forums', img: 'forum.png', tagColor: '#5f9ea0'},
+          {id: 2, title: 'Mort', tags: 'Desktop', description: 'Computer game', img: 'mort.png', tagColor: '#9aa5ea'}
+        ]
+      }
+    },
+    components: {
+      ProjectItem
+    }
+  }
+</script>
+
 <style>
+  .projects {
+
+  }
+
+  .projects__title {
+    font-family: Nickainley, sans-serif;
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 3em;
+  }
+
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (max-width: 680px) {
+    .projects__title {
+      margin-top: 0.5em;
+    }
+
+    .projects-grid {
+      font-size: 1.2em;
+    }
+  }
 
 </style>

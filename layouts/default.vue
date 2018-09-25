@@ -5,6 +5,10 @@
 </template>
 
 <style>
+  body {
+    margin: 0;
+  }
+
 html {
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;

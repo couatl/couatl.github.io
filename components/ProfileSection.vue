@@ -1,16 +1,13 @@
 <template>
-  <section class="profile">
+  <section id="about" class="profile">
     <div class="profile__photo"/>
     <div class="profile__info">
       <div class="profile__title">About</div>
 
       <div class="profile__info_text">
         <div style="font-weight: normal">Hola!</div>
-        <div style="margin-bottom: 1em; margin-bottom: 1em;
-    background-color: #5d191e;
-    padding-left: 2px;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;">
+        <div
+          style="margin-bottom: 1em; margin-bottom: 1em; background-color: #5d191e; padding-left: 2px; padding-top: 0.5em; padding-bottom: 0.5em; text-align: center;">
           I am Web Developer with knowledge of Cybersecurity. <br/> Currently living in
           <font-awesome-icon icon="map-marker-alt"/>
           Moscow.
@@ -47,7 +44,9 @@
         </div>
 
         <div class="download-button">
-          <a href="svoykina_ru.pdf"><font-awesome-icon style="margin-right: 0.5em" icon="file-pdf"/>Download Resume</a>
+          <a href="svoykina_ru.pdf">
+            <font-awesome-icon style="margin-right: 0.5em" icon="file-pdf"/>
+            Download Resume</a>
         </div>
       </div>
     </div>
@@ -56,8 +55,8 @@
 <!--<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>-->
 
 <script>
-  // TODO: click download in new tab!
-  // TODO: MOBILE
+  // TODO.md: click download in new tab!
+  // TODO.md: MOBILE
   import CathedralIcon from '~/components/CathedralIcon.vue'
 
   export default {
@@ -86,7 +85,7 @@
   .profile__photo {
     width: 50%;
     min-height: 40em;
-    background: url('../static/profile-photo.png') no-repeat top center;
+    background: url('../static/profile-photo.png') no-repeat center center;
     background-size: cover;
   }
 

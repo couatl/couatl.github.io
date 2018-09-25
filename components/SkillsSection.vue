@@ -145,6 +145,7 @@
     margin-bottom: 1em;
     width: 25em;
     max-width: 80%;
+    box-shadow: -1px 15px 30px -12px #00000047;
   }
 
   .skills-list__body_item {

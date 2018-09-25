@@ -5,6 +5,7 @@
       <div>
         <github/>
         <app-title/>
+        <img src="laptop.png" class="logo__laptop"/>
         <div class="landing__down">
           <div class="landing__down-text">
             About
@@ -25,21 +26,25 @@
       <div class="triangles__left"></div>
       <div class="triangles__right"></div>
     </div>
+    <div class="projects__triangle"/>
+    <div class="projects__triangle_right"/>
     <projects-section/>
+    <custom-footer/>
   </div>
 </template>
 
 <script>
 
-  // TODO: При ховере на руку + about -> баунсинг руки
-  // TODO: русская версия
-  // TODO: появление меню при скролле вниз
-  // TODO: появление меню при скролле вниз
+  // TODO.md: При ховере на руку + about -> баунсинг руки
+  // TODO.md: русская версия
+  // TODO.md: появление меню при скролле вниз
+  // TODO.md: появление меню при скролле вниз
   // Поблагодарить шрифты в футере
 
   import Github from '~/components/Github.vue'
   import AppHeader from '~/components/AppHeader.vue'
   import AppTitle from '~/components/AppTitle.vue'
+  import CustomFooter from '~/components/CustomFooter.vue'
   import WaveDivider from '~/components/WaveDivider.vue'
 
   import ProfileSection from '~/components/ProfileSection.vue'
@@ -56,7 +61,8 @@
       ExperienceSection,
       SkillsSection,
       ProjectsSection,
-      WaveDivider
+      WaveDivider,
+      CustomFooter
     }
   }
 </script>
@@ -73,6 +79,12 @@
     /*background: #333532 url("../static/2.png") no-repeat right;*/
     background-size: contain;
     box-shadow: inset 0 0 0 0.3em #732a2f;
+  }
+
+  .logo__laptop {
+    width: 15em;
+    margin-bottom: 0;
+    margin-top: 1em;
   }
 
   .landing__down {
@@ -174,6 +186,29 @@
     border-width: 0 0 5em 5em;
     border-bottom-color: #b56221;
     border-left-color: rgba(75, 0, 130, 0);
+  }
+
+  .projects__triangle {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    border: transparent solid;
+    border-width: 5em 15em 0 0;
+    border-top-color: #eee;
+    border-right-color: rgba(0, 0, 255, 0);
+  }
+
+  .projects__triangle_right {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    border: transparent solid;
+    right: 0;
+    border-width: 5em 0 0 15em;
+    border-top-color: #eee;
+    border-right-color: rgba(0, 0, 255, 0);
   }
 
 </style>
