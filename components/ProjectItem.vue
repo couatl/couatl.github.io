@@ -89,15 +89,16 @@
     font-weight: 600;
     margin-left: 1em;
     cursor: pointer;
+    transition: all .3s ease;
   }
 
   .project-item__more:hover {
-    border-color: white;
+    opacity: 0.7;
   }
 
 
   .project-item__img:hover {
-    filter: contrast(50%) grayscale(1);
+    /*filter: contrast(50%) grayscale(1);*/
   }
 
   .project-item__browser-tab-bar {

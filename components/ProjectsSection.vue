@@ -31,7 +31,8 @@
 
 <style>
   .projects {
-
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 
   .projects__title {
@@ -48,10 +49,6 @@
   }
 
   @media (max-width: 680px) {
-    .projects__title {
-      margin-top: 0.5em;
-    }
-
     .projects-grid {
       font-size: 1.2em;
     }

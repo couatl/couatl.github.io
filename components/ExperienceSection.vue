@@ -11,7 +11,7 @@
           <h2>Sberbank Technologies</h2>
           <div class="timeline-content-info">
           <div class="timeline-content-info-title">
-            <font-awesome-icon icon="certificate"/>Front End Developer
+            <font-awesome-icon icon="certificate"/>Web Developer
           </div>
             <div class="timeline-content-info-date">
               <font-awesome-icon icon="calendar-alt"/>June 2018 - August 2018
