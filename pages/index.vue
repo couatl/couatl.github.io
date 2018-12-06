@@ -11,7 +11,6 @@
         </div>
       </div>
     </section>
-    <custom-footer/>
   </div>
 </template>
 

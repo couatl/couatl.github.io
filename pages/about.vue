@@ -12,7 +12,6 @@
       <div class="triangles__left"></div>
       <div class="triangles__right"></div>
     </div>
-    <custom-footer/>
   </div>
 </template>
 <script>
