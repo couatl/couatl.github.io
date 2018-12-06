@@ -2,15 +2,18 @@
   <div>
     <app-header/>
     <nuxt/>
+    <custom-footer/>
   </div>
 </template>
 
 <script>
   import AppHeader from '~/components/AppHeader.vue'
+  import CustomFooter from '~/components/CustomFooter.vue'
 
   export default {
     components: {
-      AppHeader
+      AppHeader,
+      CustomFooter
     }
   }
 </script>
