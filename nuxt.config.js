@@ -20,6 +20,9 @@ module.exports = {
   plugins: [
       { src: '~/plugins/font-awesome' }
   ],
+  css: [
+    'assets/main.css'
+  ],
   /*
   ** Build configuration
   */
