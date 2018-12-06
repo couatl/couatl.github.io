@@ -1,12 +1,22 @@
 <template>
   <header>
     <div class="navbar" v-bind:class="{navbar__show: scrollPosition > 0}">
-      <div>
-        <div class="navbar__link"><a href="#about">About</a></div>
+      <div class="navbar__links">
+        <div class="navbar__link">
+          <nuxt-link to="/" class="menu-item">Home</nuxt-link>
+        </div>
         <span>/</span>
-        <div class="navbar__link"><a href="#projects">Projects</a></div>
+        <div class="navbar__link">
+          <nuxt-link to="/about" class="menu-item">About</nuxt-link>
+        </div>
         <span>/</span>
-        <div class="navbar__link"><a href="#contact">Contact</a></div>
+        <div class="navbar__link">
+          <nuxt-link to="/projects" class="menu-item">Projects</nuxt-link>
+        </div>
+        <span>/</span>
+        <div class="navbar__link">
+          <nuxt-link to="/contact" class="menu-item">Contact</nuxt-link>
+        </div>
       </div>
       <div class="lang">
         <div class="lang__ru">Русский</div>
@@ -14,20 +24,33 @@
         <div class="lang__eng">eng</div>
       </div>
     </div>
-    <div class="mobile-navbar__overlay" v-on:click="toggle" v-bind:class="{ mobileNavbar__overlayActive: showMobileMenu }"/>
+
+    <div class="mobile-navbar__overlay" v-on:click="toggle"
+         v-bind:class="{ mobileNavbar__overlayActive: showMobileMenu }"></div>
+
     <div class="mobile-navbar-icon " v-on:click="toggle" v-bind:class="{ active: showMobileMenu }">
-        <span class="line-1"></span>
-        <span class="line-2"></span>
-        <span class="line-3"></span>
+      <span class="line-1"></span>
+      <span class="line-2"></span>
+      <span class="line-3"></span>
     </div>
     <div class="mobile-navbar" v-bind:class="{ mobileNavbar__triggered: showMobileMenu }">
       <div class="mobile-navbar__header">
         <!--<font-awesome-icon icon="map-signs"/> -->
-        Quick Navigation</div>
+        Quick Navigation
+      </div>
       <div class="mobile-navbar__link">
-        <a href="#about"><font-awesome-icon icon="address-card"/>About</a>
-        <a href="#projects"><font-awesome-icon icon="briefcase"/>Projects</a>
-        <a href="#contact"><font-awesome-icon icon="phone"/>Contact</a>
+        <nuxt-link to="/about" class="menu-item" v-on:click="toggle">
+          <font-awesome-icon icon="address-card"/>
+          About
+        </nuxt-link>
+        <nuxt-link to="/projects" class="menu-item">
+          <font-awesome-icon icon="briefcase"/>
+          Projects
+        </nuxt-link>
+        <nuxt-link to="/contact" class="menu-item">
+          <font-awesome-icon icon="phone"/>
+          Contact
+        </nuxt-link>
       </div>
       <div class="mobile-navbar-lang">
         <div class="mobile-navbar-lang__ru">Русский</div>
@@ -41,7 +64,7 @@
 
 <script>
   export default {
-    data: function() {
+    data: function () {
       return {
         showMobileMenu: false,
         scrollPosition: null
@@ -83,7 +106,7 @@
     margin: 0.5em;
   }
 
-  .navbar a {
+  .navbar .menu-item {
     color: black;
     outline: none;
     cursor: pointer;
@@ -91,7 +114,7 @@
     transition: all 250ms ease;
   }
 
-  .navbar a:hover {
+  .navbar .menu-item:hover {
     color: darkred;
     box-shadow: 0 2px darkred;
   }
@@ -106,10 +129,11 @@
     border-bottom: 1px solid #4c1a1e;
   }
 
-  .navbar__show a {
+  .navbar__show .menu-item {
     color: white;
   }
-  .navbar__show a:hover {
+
+  .navbar__show .menu-item:hover {
     color: white;
     box-shadow: 0 2px white;
   }
@@ -200,7 +224,7 @@
     height: fit-content;
   }
 
-  .mobile-navbar__link a {
+  .mobile-navbar__link .menu-item {
     text-decoration: none;
     color: black;
     display: flex;
