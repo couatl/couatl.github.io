@@ -146,6 +146,7 @@
   .lang {
     text-transform: uppercase;
     letter-spacing: 1px;
+    display: none;
   }
 
   .lang div {
@@ -154,6 +155,11 @@
     transition: all 250ms ease;
 
     cursor: pointer;
+    display: none;
+  }
+
+  .lang * {
+    display: none;
   }
 
   .lang div:hover {
@@ -277,6 +283,7 @@
     display: flex;
     font-size: 1.4em;
     padding: 1em;
+    display: none;
   }
 
   .mobile-navbar-lang div {
