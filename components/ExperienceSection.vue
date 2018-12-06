@@ -88,6 +88,7 @@
     padding: 2em;
     color: white;
     margin-bottom: -2px;
+    font-size: 1.1em;
   }
 
   .resume__title {
