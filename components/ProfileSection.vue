@@ -1,11 +1,12 @@
 <template>
   <section id="about" class="profile">
+    <div class="navbar__background"></div>
     <div class="profile__photo"/>
     <div class="profile__info">
-      <div class="profile__title">About</div>
+      <div class="profile__name">I'm Svoykina Nadya</div>
+      <div class="profile__title">Frontend & Backend <br/> developer</div>
 
       <div class="profile__info_text">
-        <div style="font-weight: normal">Hola!</div>
         <div
           style="margin-bottom: 1em; margin-bottom: 1em; background-color: #5d191e; padding-left: 2px; padding-top: 0.5em; padding-bottom: 0.5em; text-align: center;">
           I am Web Developer with knowledge of Cybersecurity. <br/> Currently living in
@@ -15,34 +16,19 @@
         <div style="font-weight: normal">
           <cathedral-icon class="profile__cathedral-icon"/>
 
-          I started studying Web development during course on highload systems by Mail.ru a year ago and found myself
-          really passionate about it.
+          I started studying Web development during course on highload systems by Mail.ru.
+          <br/>
+          And I found myself really passionate about it.
           Especially I loved frontend development.
-          <br/> Later I continued learning modern frameworks on my own which I liked. So I always prefer using them in
-          my projects.
+          <br/>
+          Also I am an Information Security student.
           <br/>
           <br/>
-          Also I am now an Information Security student.
+          Want to find out more about my focus and experience?
         </div>
       </div>
 
       <div class="profile__info_buttons">
-        <!--Социальные сети!-->
-        <div class="social-icons">
-          <a href="https://www.facebook.com/nadia.svoykina">
-            <font-awesome-icon :icon="['fab', 'facebook-f']"/>
-          </a>
-          <a href="https://vk.com/po_dushka">
-            <font-awesome-icon :icon="['fab', 'vk']"/>
-          </a>
-          <a href="https://github.com/couatl">
-            <font-awesome-icon :icon="['fab', 'github']"/>
-          </a>
-          <a href="https://t.me/couatl">
-            <font-awesome-icon :icon="['fab', 'telegram']"/>
-          </a>
-        </div>
-
         <div class="download-button">
           <a href="svoykina_ru.pdf">
             <font-awesome-icon style="margin-right: 0.5em" icon="file-pdf"/>
@@ -72,19 +58,22 @@
     display: flex;
     background-color: #732a2f;
     color: white;
-    padding: 0;
+    /*padding: 1em;*/
+    /*padding-top: 5em;*/
+    min-height: 65em;
+    height: 100vh;
+    /*box-shadow: inset 0 0 0 1em #ffffff;*/
   }
 
   .profile__title {
     font-family: Nickainley, sans-serif;
-    text-align: center;
+    text-align: left;
     margin-bottom: 0.5em;
     font-size: 3em;
   }
 
   .profile__photo {
     width: 50%;
-    min-height: 40em;
     background: url('../static/profile-photo.png') no-repeat center center;
     background-size: cover;
   }
@@ -93,6 +82,7 @@
     margin: auto;
     padding: 2em;
     width: 50%;
+    font-size: 1.1em;
   }
 
   .profile__info_text {
@@ -111,21 +101,10 @@
     margin: 10px;
   }
 
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    font-size: 1.5em;
-  }
-
-  .social-icons a {
-    color: white;
-    margin: 0.5em;
-  }
-
   .download-button {
-    margin: 1em;
     text-align: center;
     font-weight: bold;
+    margin: 3em 1em 1em;
   }
 
   .download-button a:hover {
@@ -134,21 +113,25 @@
   }
 
   .download-button a {
-    padding: 0.5em;
-    letter-spacing: 1px;
-    border-radius: 5px;
+    transition: all 0.3s;
     border: solid 1px white;
     color: white;
-    transition: all 0.3s;
+    padding: .85rem 1.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 5rem;
+    cursor: pointer;
   }
 
   .download-button a i {
     margin-right: 0.4em;
   }
 
-  @media (max-width: 680px) {
+  @media (max-width: 750px) {
     .profile {
       flex-direction: column;
+      height: fit-content;
     }
 
     .profile__photo {
@@ -161,5 +144,23 @@
     .profile__info {
       width: 100%;
     }
+
+    .navbar__background {
+      display: none;
+    }
+  }
+
+  .navbar__background {
+    height: 4em;
+    margin-top: 1em;
+    position: absolute;
+    width: 100%;
+    background: #ffffff63;
+  }
+
+  .profile__name {
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, .8);
+
   }
 </style>
