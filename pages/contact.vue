@@ -13,7 +13,7 @@
         </div>
         <br/>
         <b>Email</b>
-        <div class="contact__email">nadya.svojkina@gmail.com</div>
+        <a class="contact__email" href="mailto:nadya.svojkina@gmail.com">nadya.svojkina@gmail.com</a>
         <div class="contact__links">
           <div class="contact__links_item">
             <a href="https://www.facebook.com/nadia.svoykina">
@@ -110,6 +110,11 @@
     margin-top: 0.5em;
     margin-right: 0.7em;
     text-align: left;
+  }
+
+  .contact__body a{
+    color: white;
+    width: fit-content;
   }
 
   @media (max-width: 680px) {
