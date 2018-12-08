@@ -77,6 +77,7 @@
     text-decoration: none;
     border-radius: 5rem;
     background: #f7f7f7;
+    text-align: center;
     cursor: pointer;
     transition: background .25s ease-in-out, color .25s ease-in-out;
   }
@@ -84,6 +85,12 @@
   .logo__button:hover {
     background: #370f10;
     color: white;
+  }
+
+  @media (max-width: 680px) {
+    .logo__laptop {
+      width: 12em;
+    }
   }
 </style>
 
