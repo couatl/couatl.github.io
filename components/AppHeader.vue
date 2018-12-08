@@ -35,8 +35,10 @@
     </div>
     <div class="mobile-navbar" v-bind:class="{ mobileNavbar__triggered: showMobileMenu }">
       <div class="mobile-navbar__header">
+        <nuxt-link to="/">
         <!--<font-awesome-icon icon="map-signs"/> -->
-        Quick Navigation
+        Home
+        </nuxt-link>
       </div>
       <div class="mobile-navbar__link">
         <nuxt-link to="/about" class="menu-item" v-on:click="toggle">
@@ -247,6 +249,7 @@
     font-size: 1.6em;
     font-weight: 600;
     margin-top: 1em;
+    margin-bottom: 1em;
     display: flex;
   }
 
