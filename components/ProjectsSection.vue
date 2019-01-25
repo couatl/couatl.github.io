@@ -22,6 +22,8 @@
             title: 'Apoj',
             tags: 'Frontend',
             description: '— single page application for browser game',
+            detailedDescription: 'Browser game based on the broken phone game. Supporting multiplayer mode and offline singleplayer. You sing -
+          we reverse your song - your friend guess what it was.',
             img: 'apoj.png',
             tagColor: '#b8641f',
             features: [{
@@ -41,6 +43,7 @@
             title: 'Forum',
             tags: 'Backend',
             description: '— developed REST Api to forum according to swagger docs',
+            detailedDescription: 'REST Api written in Go for Technopark.Mail.ru course about databases.',
             img: 'forum.png',
             tagColor: '#5f9ea0', features: [{
               id: 0, data: "Used PostgreSQL, Golang pq driver"
@@ -58,6 +61,7 @@
             title: 'Mort',
             tags: 'Desktop',
             description: '— original desktop game',
+            detailedDescription: 'Desktop platformer game used as final project for course on C++.',
             img: 'mort.png',
             tagColor: '#9aa5ea', features: [{
               id: 0, data: "Inspired by Terry Pratchett's Discworld novels"
