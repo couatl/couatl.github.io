@@ -12,8 +12,7 @@
           {{ project.tags }}
         </div>
         <div class="project-item__detailed-description">
-          Browser game based on the broken phone game. Supporting multiplayer mode and offline singleplayer. You sing -
-          we reverse your song - your friend guess what it was.
+          {{ project.detailedDescription }}
         </div>
         <div class="project-item__up-subtitle">
           Features:
