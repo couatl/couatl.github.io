@@ -22,8 +22,7 @@
             title: 'Apoj',
             tags: 'Frontend',
             description: '— single page application for browser game',
-            detailedDescription: 'Browser game based on the broken phone game. Supporting multiplayer mode and offline singleplayer. You sing -
-          we reverse your song - your friend guess what it was.',
+            detailedDescription: 'Browser game based on the broken phone game. Supporting multiplayer mode and offline singleplayer. You sing - we reverse your song - your friend guess what it was.',
             img: 'apoj.png',
             tagColor: '#b8641f',
             features: [{
