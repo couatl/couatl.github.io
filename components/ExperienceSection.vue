@@ -8,6 +8,29 @@
         </div>
 
         <div class="resume__timeline_content">
+          <h2>Yandex</h2>
+          <div class="timeline-content-info">
+            <div class="timeline-content-info-title">
+              <font-awesome-icon icon="certificate"/>Frontend Developer
+            </div>
+            <div class="timeline-content-info-date">
+              <font-awesome-icon icon="calendar-alt"/>January 2019 - NOW
+            </div>
+          </div>
+          <p>Working in a frontend team of business unit.</p>
+          <ul class="content-skills">
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Redux</li>
+          </ul>
+        </div> <!-- cd-timeline-content -->
+      </div>
+
+      <div class="resume__timeline_block">
+        <div class="resume__timeline-img resume__timeline-picture">
+        </div>
+
+        <div class="resume__timeline_content">
           <h2>Sberbank Technologies</h2>
           <div class="timeline-content-info">
           <div class="timeline-content-info-title">

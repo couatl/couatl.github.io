@@ -30,7 +30,7 @@
 
       <div class="profile__info_buttons">
         <div class="download-button">
-          <a href="svoykina_ru.pdf">
+          <a href="svoykina.pdf">
             <font-awesome-icon style="margin-right: 0.5em" icon="file-pdf"/>
             Download Resume</a>
         </div>
