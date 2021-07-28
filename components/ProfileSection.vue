@@ -4,7 +4,7 @@
     <div class="profile__photo"/>
     <div class="profile__info">
       <div class="profile__name">I'm Svoykina Nadya</div>
-      <div class="profile__title">Frontend & Backend <br/> developer</div>
+      <div class="profile__title">Frontend developer</div>
 
       <div class="profile__info_text">
         <div
@@ -15,7 +15,8 @@
         </div>
         <div style="font-weight: normal">
           <cathedral-icon class="profile__cathedral-icon"/>
-
+          Years of experience: 4
+          <br/>
           I started studying Web development during course on highload systems by Mail.ru.
           <br/>
           And I found myself really passionate about it.

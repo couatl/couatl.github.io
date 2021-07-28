@@ -18,9 +18,6 @@
 
   // TODO.md: При ховере на руку + about -> баунсинг руки
   // TODO.md: русская версия
-  // TODO.md: появление меню при скролле вниз
-  // TODO.md: появление меню при скролле вниз
-  // Поблагодарить шрифты в футере
 
   import ProfileSection from '~/components/ProfileSection.vue'
   import CustomFooter from '~/components/CustomFooter.vue'

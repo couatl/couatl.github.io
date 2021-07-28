@@ -12,3 +12,5 @@ npm-debug.log
 dist
 
 package-lock.js
+
+.DS_STORE

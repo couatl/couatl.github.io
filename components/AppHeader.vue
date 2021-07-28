@@ -47,7 +47,7 @@
         </nuxt-link>
         <nuxt-link to="/projects" class="menu-item">
           <font-awesome-icon icon="briefcase"/>
-          Projects
+          Pet Projects
         </nuxt-link>
         <nuxt-link to="/contact" class="menu-item">
           <font-awesome-icon icon="phone"/>

@@ -1,6 +1,6 @@
 <template>
   <section id="projects" class="projects">
-    <div class="projects__title">Projects</div>
+    <div class="projects__title">Pet Projects</div>
     <div class="projects-grid">
       <project-item
         v-for="item in projectsList"
