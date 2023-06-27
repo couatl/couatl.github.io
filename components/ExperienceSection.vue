@@ -7,21 +7,57 @@
         <div class="resume__timeline-img resume__timeline-picture">
         </div>
 
+        <div class="resume__timeline_block">
+        <div class="resume__timeline-img resume__timeline-picture">
+        </div>
+
         <div class="resume__timeline_content">
           <h2>Yandex</h2>
           <div class="timeline-content-info">
-            <div class="timeline-content-info-title">
-              <font-awesome-icon icon="certificate"/>Frontend Developer
-            </div>
-            <div class="timeline-content-info-date">
-              <font-awesome-icon icon="calendar-alt"/>January 2019 - NOW
-            </div>
+          <div class="timeline-content-info-title">
+            <font-awesome-icon icon="certificate"/>Senior Frontend developer
           </div>
-          <p>Working in a frontend team of business unit.</p>
+            <div class="timeline-content-info-date">
+              <font-awesome-icon icon="calendar-alt"/>02.2022 – 02.2023
+          </div>
+          </div>
+          <p>Worked at the Ad tech team (Yandex Direct)</p>
+          <p>Lead a major product feature with 4+ developers engaged</p>
+          <p>Developed new modules in feature-sliced architecture with high coverage of unit testing using Jest, React testing library</p>
+          <p>Conducted 40+ tech interviews</p>
+          <p>Onboarded and mentored 6 new team members</p>
+          <p>Held training meetings with QA team</p>
           <ul class="content-skills">
             <li>TypeScript</li>
             <li>React</li>
             <li>Redux</li>
+            <li>Redux toolkit</li>
+            <li>React query</li>
+            <li>Mentoring</li>
+          </ul>
+        </div> <!-- cd-timeline-content -->
+      </div>
+
+        <div class="resume__timeline_content">
+          <h2>Yandex</h2>
+          <div class="timeline-content-info">
+            <div class="timeline-content-info-title">
+              <font-awesome-icon icon="certificate"/>Frontend developer
+            </div>
+            <div class="timeline-content-info-date">
+              <font-awesome-icon icon="calendar-alt"/>01.2019 – 02.2022
+            </div>
+          </div>
+          <p>Migrated legacy ad creatives module to new stack (React, Redux)</p>
+          <p>Developed ad campaign pages (create, edit, view statistics) with SSR and mobile version</p>
+          <p>Created service's web widget. Worked with security issues (ITP, third-parties cookies, etc)</p>
+          <p>Writing integration tests with Webdriverio, Selenium</p>
+          <ul class="content-skills">
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>GraphQL</li>
+            <li>RxJS</li>
           </ul>
         </div> <!-- cd-timeline-content -->
       </div>
@@ -40,7 +76,15 @@
               <font-awesome-icon icon="calendar-alt"/>June 2018 - August 2018
           </div>
           </div>
-          <p>Created web app for clustering analysis from scratch. Besides default pages app included dashboard page with analytic graphs and search interface for Elasticsearch. <br/> Another part of the job was creating rest-interface for django-backend using django-rf and connecting to MongoDB. </p>
+          <p>
+            Created frontend for clustering analysis from scratch using React, Redux and Typescript
+          </p>
+          <p>
+            Developed dashboard page with analytic graphs and search interface for Elasticsearch
+          </p>
+          <p>
+            Developed a REST Api based on Django application using django-rest-framework and connected it to MongoDB
+          </p>
           <ul class="content-skills">
             <li>TypeScript</li>
             <li>React</li>
@@ -88,10 +132,11 @@
               <font-awesome-icon icon="certificate"/>Information Security Student
             </div>
             <div class="timeline-content-info-date">
-              <font-awesome-icon icon="calendar-alt"/>2015 - Now
+              <font-awesome-icon icon="calendar-alt"/>2015 - 2021
             </div>
           </div>
-          <p>Now I am 4th year student. Average score is 4.8 (out of 5). </p>
+          <p>GPA: 4.78/5.0 </p>
+          <p>Thesis: Security issues scaner for GraphQL web application</p>
           <ul class="content-skills">
             <li>Algorithms & Data Structures</li>
             <li>Linear Algebra</li>

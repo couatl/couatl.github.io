@@ -17,6 +17,29 @@
     data: function () {
       return {
         projectsList: [
+        {
+            id: 9,
+            title: 'Use-By',
+            tags: 'iOS',
+            description: '— iOS App for tracking expiration date of products',
+            img: 'useby.png',
+            tagColor: '#9acd32',
+            features: [
+              {
+              id: 0, data: "Firebase and Google Authorization"
+            },
+            {
+              id: 1, data: "Light/Dark theme"
+            },
+            {
+              id: 2, data: "Localization Support"
+            },
+            {
+              id: 3, data: "Custom design made with Figma"
+            }
+          ],
+            technologies: ["Swift", "Snapkit", "Firebase", "Cloud Firestore"]
+          },
           {
             id: 0,
             title: 'Apoj',

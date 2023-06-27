@@ -15,10 +15,6 @@
   </div>
 </template>
 <script>
-
-  // TODO.md: При ховере на руку + about -> баунсинг руки
-  // TODO.md: русская версия
-
   import ProfileSection from '~/components/ProfileSection.vue'
   import CustomFooter from '~/components/CustomFooter.vue'
   import ExperienceSection from '~/components/ExperienceSection.vue'

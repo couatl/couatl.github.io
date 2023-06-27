@@ -9,31 +9,37 @@
       <div class="profile__info_text">
         <div
           style="margin-bottom: 1em; margin-bottom: 1em; background-color: #5d191e; padding-left: 2px; padding-top: 0.5em; padding-bottom: 0.5em; text-align: center;">
-          I am Web Developer with knowledge of Cybersecurity. <br/> Currently living in
+          I am Frontend developer with 4+ years of experience. <br/> Currently living in
           <font-awesome-icon icon="map-marker-alt"/>
           Moscow.
         </div>
         <div style="font-weight: normal">
           <cathedral-icon class="profile__cathedral-icon"/>
-          Years of experience: 4
-          <br/>
-          I started studying Web development during course on highload systems by Mail.ru.
-          <br/>
-          And I found myself really passionate about it.
-          Especially I loved frontend development.
-          <br/>
-          Also I am an Information Security student.
+          I worked a lot with React & Redux, have a big experience in onboarding, mentoring and technical interviewing.
           <br/>
           <br/>
-          Want to find out more about my focus and experience?
+          <a class="profile__email" href="mailto:nadya.svojkina@gmail.com">nadya.svojkina@gmail.com</a>
+          <a class="profile__linkedin" href="https://www.linkedin.com/in/n-svoykina/">www.linkedin.com/in/n-svoykina/</a>
+          <div class="profile__links">
+            <div class="profile__links_item">
+              <a href="https://t.me/couatl">
+                <font-awesome-icon :icon="['fab', 'telegram']"/>
+              </a>
+            </div>
+            <div class="profile__links_item">
+              <a href="https://github.com/couatl">
+                <font-awesome-icon :icon="['fab', 'github']"/>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="profile__info_buttons">
         <div class="download-button">
-          <a href="svoykina.pdf">
+          <a href="CvSvoykina.pdf">
             <font-awesome-icon style="margin-right: 0.5em" icon="file-pdf"/>
-            Download Resume</a>
+            Download CV</a>
         </div>
       </div>
     </div>
@@ -127,6 +133,29 @@
 
   .download-button a i {
     margin-right: 0.4em;
+  }
+
+  .profile__email, .profile__linkedin {
+    display: block;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .profile__links {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.8em;
+  }
+
+  .profile__links a {
+    color: white;
+  }
+
+  .profile__links_item {
+    margin-top: 0.5em;
+    margin-right: 0.7em;
+    text-align: left;
   }
 
   @media (max-width: 750px) {

@@ -7,7 +7,6 @@
         <img src="laptop.png" class="logo__laptop"/>
         <div class="logo__buttons">
           <nuxt-link to="/about" class="logo__button">More about me</nuxt-link>
-          <nuxt-link to="/projects" class="logo__button">Show some work</nuxt-link>
         </div>
       </div>
     </section>
@@ -15,9 +14,6 @@
 </template>
 
 <script>
-
-  // TODO.md: русская версия
-
   import Github from '~/components/Github.vue'
   import AppHeader from '~/components/AppHeader.vue'
   import AppTitle from '~/components/AppTitle.vue'
@@ -64,7 +60,7 @@
 
   .logo__buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: .5em;
   }
 

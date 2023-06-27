@@ -14,34 +14,59 @@
           </div>
 
           <div class="skills-list__body_item">
+            <font-awesome-icon style="color: #1f71b6" icon="code"/>
+            HTML, CSS
+          </div>
+
+          <div class="skills-list__body_item">
             <font-awesome-icon style="color: #61dafb" :icon="['fab', 'react']"/>
             React, Redux
           </div>
 
           <div class="skills-list__body_item">
-            <font-awesome-icon style="color: #54b882" :icon="['fab', 'vuejs']"/>
-            Vue.js
+            <font-awesome-icon style="color: #1f71b6" :icon="['fab', 'css3']"/>
+            Sass, CSS Modules
           </div>
 
           <div class="skills-list__body_item">
-            <font-awesome-icon style="color: #1f71b6" :icon="['fab', 'css3']"/>
-            CSS3.0, Sass
+            <font-awesome-icon icon="file-code"/>
+            GraphQL, RxJS
           </div>
-
+        </div>
+      </li>
+      <li>
+        <div class="skills-list__icon wow zoomIn"><i class="fa fa-desktop"></i></div>
+        <div class="skills-list__head">Utilities</div>
+        <div class="skills-list__body">
           <div class="skills-list__body_item">
             <font-awesome-icon style="color: #2178c0" icon="boxes"/>
             Webpack, Babel
           </div>
 
           <div class="skills-list__body_item">
+            <font-awesome-icon icon="file-code"/>
+            Jest, RTL
+          </div>
+
+          <div class="skills-list__body_item">
+            <font-awesome-icon icon="file-code"/>
+            Webdriverio, Selenium
+          </div>
+
+          <div class="skills-list__body_item">
+            <font-awesome-icon icon="file-code"/>
+            Storybook, Sentry
+          </div>
+
+          <div class="skills-list__body_item">
             <font-awesome-icon icon="desktop"/>
-            Photoshop, Illustrator
+            Figma
           </div>
         </div>
       </li>
       <li>
         <div class="skills-list__icon wow zoomIn"><i class="fa fa-code"></i></div>
-        <div class="skills-list__head">Backend</div>
+        <div class="skills-list__head">Additional</div>
         <div class="skills-list__body">
           <div class="skills-list__body_item">
             <font-awesome-icon style="color: #ffd845" icon="code"/>
@@ -53,33 +78,15 @@
           </div>
           <div class="skills-list__body_item">
             <font-awesome-icon style="color: #336691" icon="file-code"/>
-            PostgreSQL
-          </div>
-          <div class="skills-list__body_item">
-            <font-awesome-icon style="color: #50aa41" icon="file-code"/>
-            MongoDB
-          </div>
-          <div class="skills-list__body_item">
-            <font-awesome-icon style="color: #51bcb3" icon="file-code"/>
-            Elasticsearch
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="skills-list__icon wow zoomIn"><i class="fa fa-desktop"></i></div>
-        <div class="skills-list__head">DevOPS</div>
-        <div class="skills-list__body">
-          <div class="skills-list__body_item">
-            <font-awesome-icon style="color: #ee4e30" :icon="['fab', 'git']"/>
-            Github, Bitbucket
+            SQL
           </div>
           <div class="skills-list__body_item">
             <font-awesome-icon style="color: #019bc6" :icon="['fab', 'docker']"/>
             Docker
           </div>
           <div class="skills-list__body_item">
-            <font-awesome-icon icon="file-code"/>
-            Travis CI
+            <font-awesome-icon style="color: #ee4e30" :icon="['fab', 'git']"/>
+            Github, Bitbucket
           </div>
         </div>
       </li>
